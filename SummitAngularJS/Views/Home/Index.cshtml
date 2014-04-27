@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row" ng-controller="todoController">
+    <h1>TODO - List</h1>
+    <hr />
+    {{teste}}
+    <a href="#" ng-click="add">Adicionar Nova Tarefa</a>
+    <ul>
+        <li ng-repeat="todo in todos">
+            <p>{{todo.Id}} - {{todo.Task}}</p>
+        </li>
+    </ul>
+</div>

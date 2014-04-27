@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+<h1>DIRECTIVES</h1>
+<hr />
+
+<div>
+    Quantidade: <input ng-model="qt" value="1" />
+    Preco: <input ng-model="pr" />
+    Total {{qt * pr}}
+</div>
+
+
+
+
+
+
+
+<h1>FILTERS</h1>
+<hr />
+
+<div ng-controller="PhoneListCtrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!--Sidebar content-->
+                Search: <input ng-model="query">
+
+            </div>
+            <div class="col-md-10">
+                <!--Body content-->
+
+                <ul class="phones">
+                    <li ng-repeat="phone in phones | filter:query">
+                        {{phone.name}}
+                        <p>{{phone.snippet}}</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
