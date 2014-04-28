@@ -5,6 +5,13 @@ ASP.net + AngularJs
 
 HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
 
+Learn
+======
+ * https://angularjs.org/
+ * https://docs.angularjs.org/tutorial
+ * https://www.youtube.com/watch?v=i9MHigUZKEM
+
+
 Files
 ======
 ##scripts
